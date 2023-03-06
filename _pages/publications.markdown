@@ -2,7 +2,7 @@
 title: "Publications"
 permalink: /pages/publications
 date: 2021-08-12T10:31:00+02:00
-author: Bernhard Berger
+author: Bernhard J. Berger
 author_profile: true
 classes: wide
 ---
