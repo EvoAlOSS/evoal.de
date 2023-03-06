@@ -24,6 +24,8 @@ feature_row:
 #btn_label: "Read More"
 #btn_class: "btn--inverse"
 
+# {% include feature_row %}
+
 ---
 
 {: .text-justify}
@@ -33,4 +35,3 @@ feature_row:
 *EvoAl* is a tool suite that focuses on optimisation. This site is still under construction but you
 can find the code (and more info ) [here](https://gitlab.informatik.uni-bremen.de/evoal/source/evoal-core).
 
-[//]: # ({% include feature_row %})
