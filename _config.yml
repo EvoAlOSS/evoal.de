@@ -109,9 +109,9 @@ footer:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://evoal.de"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/EvoAlOSS/evoal.de"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url: "https://gitlab.informatik.uni-bremen.de/evoal/source/evoal-core"
 
 # Reading Files
 include:
