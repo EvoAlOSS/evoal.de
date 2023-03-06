@@ -1,0 +1,15 @@
+Bernhard J. Berger:
+    name:     "Dr. Bernhard J. Berger"
+    avatar:   "/assets/images/me.png"
+    bio:      "Computer Scientist, Software Security, Static Analysis, Optimisation"
+    location: "Bremen, Bremen, Germany"
+    uri:      "https://bergerbd.de"
+    xing:     "BernhardJohannes_Berger"
+    github:   "bergerbd"
+    links:
+      - label: "0000-0001-6093-9229"
+        icon: "fab da-fw fa-orcid"
+        url: "https://orcid.org/0000-0001-6093-9229"
+      - label: "ResearchGate"
+        icon: "fab fa-fw fa-researchgate"
+        url: "https://www.researchgate.net/profile/Bernhard-Berger-2"
