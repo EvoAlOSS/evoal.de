@@ -32,6 +32,9 @@ feature_row:
 
 # Welcome to the home of *EvoAl*.
 
-*EvoAl* is a tool suite that focuses on optimisation. This site is still under construction but you
-can find the code (and more info ) [here](https://gitlab.informatik.uni-bremen.de/evoal/source/evoal-core).
+*EvoAl* is a tool suite that focuses on optimisation. We aim at making optimisation research accessible
+to applied researchers without plenty of programming skills. As this site is still under construction it
+is still incomplete. Nevertheless, you can already some more information at our [GitLab page](https://gitlab.informatik.uni-bremen.de/evoal/source/evoal-core)
+which is hosted at the [University of Bremen](https://www.uni-bremen.de). *EvoAl* is a research software
+that we used in several academic publications which you can find on the [publications](publications) page
 
