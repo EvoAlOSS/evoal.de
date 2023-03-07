@@ -11,19 +11,19 @@ feature_row:
     excerpt: "*EvoAl* uses domain-specific languages for specifying all aspects of
     optimisation. Starting with data definition, algorithm specification, and ending
     at surrogate learning."
-    #image_path: "/assets/images/reverse-engineering.png"
-    #alt: "Reverse engineering pictogram."
+    image_path: "/assets/images/applied.png"
+    alt: "Applied researcher pictogram."
   - title: "Optimisation Researcher"
     excerpt: "*EvoAl* supports different optimisation algorithms, community benchmarks,
     and surrogate function learning."
-    #image_path: "/assets/images/dataflow-diagram.png"
-    #alt: "Exemplary dataflow diagram depiction."
-  - title: "*EvoAl* Contributor"
+    image_path: "/assets/images/optimisation.png"
+    alt: "Optimisation researcher pictorgram."
+  - title: "EvoAl Contributor"
     excerpt: "*EvoAl* has a component architecture with well-defined interfaces. It
     uses dependency injection to wire all components at runtime based on user 
     configuration. Maintainability has a strong focus during development."
-    #image_path: "/assets/images/security-flaws.png"
-    #alt: "Security flaw pictogram."
+    image_path: "/assets/images/contributor.png"
+    alt: "EvoAl contributor pictogram."
 
 #url: "#test-link"
 #btn_label: "Read More"
