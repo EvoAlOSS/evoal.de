@@ -17,7 +17,7 @@ _Bernhard J. Berger, Christina Plump and Rolf Drechsler_. **EvoAl: A domain-spec
 language-based approach to optimisation**. In _2023 IEEE Congress on Evolutionary
 Computation (CEC)_, 2023 **(accepted for publication)**.
 
-_Christina Plump, Bernhard J. Berger_. **KI-gestützte Optimierung repetitiver
+_Christina Plump, Rolf Drechsler, Bernhard J. Berger_. **KI-gestützte Optimierung repetitiver
 Prozesse - Eine Kodierungstechnik für repetitive Prozesse in der evolutionären
 Optimierung**. Industrie 4.0 Management, 2023. [DOI](https://doi.org/10.30844/IM_23-1_19-22){: .chip .doi}
 
