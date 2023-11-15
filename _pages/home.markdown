@@ -9,9 +9,12 @@ classes: wide
 feature_row:
   - title: "Applied Researcher"
     excerpt: "*EvoAl* uses domain-specific languages for specifying all aspects of
-    optimisation. Starting with data definition, algorithm specification, and ending
-    at surrogate learning. *EvoAl* reduces the programming effort to zero by using
-    these domain-specific languages."
+      optimisation. Starting with data definition, problem specification, algorithm
+      configuration, and ending at surrogate learning. *EvoAl* reduces the programming
+      effort to zero by using these domain-specific languages. *EvoAl* supports you
+      in the configuration by validating the requirements of algorithms against your
+      data. This is important to make sure that the algorithm can produce the best
+      results possible."
     image_path: "/assets/images/applied.png"
     alt: "Applied researcher pictogram."
   - title: "Optimisation Researcher"
@@ -43,10 +46,14 @@ feature_row:
 
 # Welcome to the home of *EvoAl*.
 
-*EvoAl* is a tool suite that focuses on optimisation. We aim at making optimisation research accessible
-to applied researchers without plenty of programming skills. As this site is still under construction it
-is still incomplete. Nevertheless, you can already some more information at our [GitLab page](https://gitlab.informatik.uni-bremen.de/evoal/source/evoal-core)
-which is hosted at the [University of Bremen](https://www.uni-bremen.de). *EvoAl* is a research software
-that we used in several academic publications which you can find on the [publications](pages/publications) page
+*EvoAl* is a tool suite that focuses on making optimisation easier to use while
+it checks the correctness of configurations. Thus, we aim to make optimisation
+algorithms and research accessible to applied researchers and domain experts.
+As *EvoAl* and this site are still under construction, there is room for
+improvement. At the moment, you find more information on our
+[GitLab project]((https://gitlab.informatik.uni-bremen.de/evoal/source/evoal-core))
+and its Wiki, which is hosted at the [University of Bremen](https://www.uni-bremen.de).
+EvoAl is an open-source research software that is used in several academic
+publications, which you find on the [publications page](pages/publications). 
 
 {% include feature_row %}
