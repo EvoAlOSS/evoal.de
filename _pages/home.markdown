@@ -37,7 +37,8 @@ feature_row:
     extensibility and maintainability are in focus during development, you can easily add new
     components to *EvoAl* and extend the domain-specific language. *EvoAl* users can simply use
     your extension by copying your *plugin* into an *EvoAl* release. *EvoAl* automatically
-    enhances the DSLs and uses the components when requested by the user."
+    enhances the DSLs and uses the components when requested by the user. You will find the
+    architecture documentation in the Wiki."
     image_path: "/assets/images/contributor.png"
     alt: "EvoAl contributor pictogram."
 
