@@ -1,12 +1,14 @@
 main:
   - title : "Home"
     url   : /
+  - title	: "Installation"
+    url	  : https://gitlab.informatik.uni-bremen.de/evoal/source/evoal-core/-/wikis/User/Installation
   - title : "Wiki"
     url   : https://gitlab.informatik.uni-bremen.de/evoal/source/evoal-core/-/wikis/home
+  - title : "Gitlab"
+    url   : https://gitlab.informatik.uni-bremen.de/evoal/source/evoal-core
   - title	: "Publications"
     url	  : /pages/publications
-#  - title	: "Installation"
-#    url	  : /pages/installation
 #  - title: "Posts"
 #    url: /year-archive/
 #  - title: "Categories"
