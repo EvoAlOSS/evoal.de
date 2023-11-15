@@ -19,18 +19,25 @@ feature_row:
     alt: "Applied researcher pictogram."
   - title: "Optimisation Researcher"
     excerpt: "*EvoAl* supports different optimisation algorithms, community benchmarks,
-    and surrogate function learning. *EvoAl* takes care of training surrogate functions,
-    either on real-world data or benchmarks, encoding your data for the optimisation
-    algorithm, and determining useful metrics for statistical evaluation."
+      and surrogate function learning. It is designed to explicitly state all configuration
+      parameters along the experimentation setup, thus, making all decisions transparent
+      and supporting experiment replication, which is helpful if you want to earn an [ACM artifact badge](https://www.acm.org/publications/policies/artifact-review-and-badging-current).
+      On the algorithm side, *EvoAl+ supports evolutionary algorithms, evolutionary strategies,
+      and particle swarm optimisation and the list is continuously enhanced. Furthermore,
+      *EvoAl* takes care of training surrogate functions, either on real-world data or
+      benchmarks, encoding your data for the optimisation algorithms, and determining useful
+      metrics for statistical evaluation." 
     image_path: "/assets/images/optimisation.png"
-    alt: "Optimisation researcher pictorgram."
+    alt: "Optimisation researcher pictogram."
   - title: "EvoAl Contributor"
-    excerpt: "*EvoAl* has a component architecture with well-defined interfaces. It
-    uses dependency injection to wire all components at runtime based on the DSL-based
-    configuration. As extensibility and maintainability are in focus during development,
-    you can easily add own components to *EvoAl* and extend the domain-specific language.
-    *EvoAl* users can simply use your extension by copying your *plugin* into a *EvoAl*
-    release."
+    excerpt: "*EvoAl* has a component architecture with well-defined interfaces and allows a
+    DSL-based extension of *EvoAl* DSLs. The component architecture allows anyone to benefit
+    from new components provided by the community. *EvoAl* uses dependency injection internally
+    to wire all components at runtime based on the provided DSL-based configuration. As
+    extensibility and maintainability are in focus during development, you can easily add new
+    components to *EvoAl* and extend the domain-specific language. *EvoAl* users can simply use
+    your extension by copying your *plugin* into an *EvoAl* release. *EvoAl* automatically
+    enhances the DSLs and uses the components when requested by the user."
     image_path: "/assets/images/contributor.png"
     alt: "EvoAl contributor pictogram."
 
