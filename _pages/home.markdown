@@ -22,7 +22,7 @@ feature_row:
       and surrogate function learning. It is designed to explicitly state all configuration
       parameters along the experimentation setup, thus, making all decisions transparent
       and supporting experiment replication, which is helpful if you want to earn an [ACM artifact badge](https://www.acm.org/publications/policies/artifact-review-and-badging-current).
-      On the algorithm side, *EvoAl+ supports evolutionary algorithms, evolutionary strategies,
+      On the algorithm side, *EvoAl* supports evolutionary algorithms, evolutionary strategies,
       and particle swarm optimisation and the list is continuously enhanced. Furthermore,
       *EvoAl* takes care of training surrogate functions, either on real-world data or
       benchmarks, encoding your data for the optimisation algorithms, and determining useful
