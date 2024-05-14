@@ -10,6 +10,15 @@ classes: wide
 Since EvoAl is a research project, there are several academic publications
 related to EvoAl here. Perhaps, these papers answer some questions you have.
 
+## 2024
+_Bernhard J. Berger, Christina Plump and Rolf Drechsler_. **EvoAl - Codeless Domain-Optimisation**.
+In _The Genetic and Evolutionary Computation Conference (GECCO Companion)_, 2024. **accepted for publication**
+
+_Christina Plump, Daniel C. Hoinkiss, Jörn Huber, Bernhard J. Berger, Matthias Günther, Christoph
+Lüth and Rolf Drechsler_. **Finding the perfect MRI sequence for your patient --- Towards an optimisation
+workflow for MRI-sequences**. In _IEEE World Congress on Computational Intelligence (IEEE WCCI 2024)_,
+Yokohama, Japan, 2024. **accepted for publication**
+
 ## 2023
 _Christina Plump, Bernhard J. Berger and Rolf Drechsler_. **Repetitive Processes
 and Their Surrogate-Model Congruent Encoding for Evolutionary Algorithms - A
