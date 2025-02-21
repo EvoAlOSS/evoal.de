@@ -10,14 +10,29 @@ classes: wide
 Since EvoAl is a research project, there are several academic publications
 related to EvoAl here. Perhaps, these papers answer some questions you have.
 
+## 2025
+_Bernhard J. Berger and Christina Plump and Rolf Drechsler_. **Why less is sometimes more:
+Using Boolean literals to solve 2048**. In _it - Information Technology_, Walter de Gruyter GmbH,
+ISSN: 2196-7032. February, 2025. [DOI](http://dx.doi.org/10.1515/itit-2024-0072){: .chip .doi}
+
 ## 2024
-_Bernhard J. Berger, Christina Plump and Rolf Drechsler_. **EvoAl - Codeless Domain-Optimisation**.
-In _The Genetic and Evolutionary Computation Conference (GECCO Companion)_, 2024. **accepted for publication**
+_Bernhard J. Berger, Christina Plump and Rolf Drechsler_. **Why Less is Sometimes More &mdash; Using Boolean Literals to Solve 2048**.
+In _16th International Workshop on Boolean Problems_, Bremen, Germany, 2024. **(workshop contribution)**.
+
+_Bernhard J. Berger, Christina Plump and Rolf Drechsler_. **EvoAl<sup>2048</sup>**.
+In _GECCO'24 - The Genetic and Evolutionary Computation Conference Companion_,
+Melbourne, Australia, 2024. **(competition contribution)**. [Online](https://arxiv.org/abs/2408.16780){: .chip .online} [Competition Winner](){: .chip .award}
+
+_Bernhard J. Berger, Christina Plump, Lauren Paul and Rolf Drechsler_. **EvoAl &mdash; Codeless Domain-Optimisation**.
+In _GECCO '24 Companion: Proceedings of the Genetic and Evolutionary Computation Conference Companion_,
+Melbourne, Australia, 2024. [DOI](https://doi.org/10.1145/3638530.3664154){: .chip .doi}
+[Online](https://agra.informatik.uni-bremen.de/doc/konf/gecco2024_cp.pdf){: .chip .online}
 
 _Christina Plump, Daniel C. Hoinkiss, Jörn Huber, Bernhard J. Berger, Matthias Günther, Christoph
-Lüth and Rolf Drechsler_. **Finding the perfect MRI sequence for your patient --- Towards an optimisation
+Lüth and Rolf Drechsler_. **Finding the perfect MRI sequence for your patient --- Towards an optimisation 
 workflow for MRI-sequences**. In _IEEE World Congress on Computational Intelligence (IEEE WCCI 2024)_,
-Yokohama, Japan, 2024. **accepted for publication**
+Yokohama, Japan, 2024. [DOI](https://doi.org/10.1109/CEC60901.2024.10612198){: .chip .doi} [Online](https://agra.informatik.uni-bremen.de/doc/konf/cec2024_cp.pdf){: .chip .online}
+
 
 ## 2023
 _Christina Plump, Bernhard J. Berger and Rolf Drechsler_. **Repetitive Processes
