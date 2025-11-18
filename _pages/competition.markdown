@@ -8,4 +8,4 @@ classes: wide
 
 ---
 
-More information are added soon.
+More information are added soon ...
