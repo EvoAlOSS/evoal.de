@@ -9,6 +9,8 @@ main:
     url   : https://gitlab.informatik.uni-bremen.de/evoal/source/evoal-core
   - title	: "Publications"
     url	  : /pages/publications
+#  - title	: "Competition'26"
+#    url	  : /pages/competition
 #  - title: "Posts"
 #    url: /year-archive/
 #  - title: "Categories"
