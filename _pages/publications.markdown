@@ -7,8 +7,11 @@ author_profile: true
 classes: wide
 ---
 
-Since EvoAl is a research project, there are several academic publications
-related to EvoAl here. Perhaps, these papers answer some questions you have.
+EvoAl is not only a tool suite for developing and evaluating optimisation algorithms, 
+but also a research project in itself. Over the years, several publications have emerged 
+from continously adapting and improving EvoAl with regards to usability and 
+functionality. Additionally, it has been a key aspect of several publications of the 
+optimisation research done in our groups. You can find a (almost) up-to-date list below. 
 
 ## 2025
 _Bernhard J. Berger and Christina Plump and Rolf Drechsler_. **Why less is sometimes more:
