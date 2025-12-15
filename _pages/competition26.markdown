@@ -31,7 +31,9 @@ Participants will have the opportunity to test their algorithms on benchmark req
 ## Evaluation Environment
 We provide participants with a simulation framework that visualises their algorithm's behaviour. Below, you can see a video demonstrating the simulation environment. It additionally allows participants to 'play around' a bit, before testing on the provided benchmark request sequences. 
 
-![Video](../assets/videos/frontend_demo.mp4)
+<video width="640" height="480" controls>
+  <source src="../assets/videos/frontend_demo.mp4" type="video/mp4">
+</video>
 
 ## Submission Process
 Deadline for submission is June 14th, 2026, 23:59 (AOE). Details on where to upload, what format, and other requirements will follow. 
