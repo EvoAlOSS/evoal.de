@@ -31,7 +31,7 @@ Participants will have the opportunity to test their algorithms on benchmark req
 ## Evaluation Environment
 We provide participants with a simulation framework that visualises their algorithm's behaviour. Below, you can see a video demonstrating the simulation environment. It additionally allows participants to 'play around' a bit, before testing on the provided benchmark request sequences. 
 
-<video width="1280" height="960" controls>
+<video width="1000" height="800" controls>
   <source src="../assets/videos/frontend_demo.mp4" type="video/mp4">
 </video>
 
