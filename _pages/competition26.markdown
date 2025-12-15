@@ -33,11 +33,6 @@ We provide participants with a simulation framework that visualises their algori
 
 ![Video](../assets/videos/frontend_demo.mp4)
 
-
-<video width="320" height="240" controls>
-  <source src="../assets/videos/frontend_demo.mp4" type="video/mp4">
-</video>
-
 ## Submission Process
 Deadline for submission is June 14th, 2026, 23:59 (AOE). Details on where to upload, what format, and other requirements will follow. 
 
