@@ -1,13 +1,13 @@
 ---
-title: "Competition"
+title: "Explainable ride-sharing optimisation for sustainable traffic organisation"
 permalink: /pages/competition26
-date: 2025-11-18T13:00:00+02:00
+date: 2026-01-01T13:00:00+02:00
 author: Bernhard J. Berger
 author_profile: true
 classes: wide
 ---
 
-# Explainable ride-sharing optimisation for sustainable traffic organisation
+[![Publications and Research Topics](/assets/images/banner-competition.jpg){: .full}](/pages/competition26)
 
 ## Motivation
 Optimisation is central to real-world logistical challenges such as resource allocation and scheduling. While techniques for static optimization have been studied for several decades, today’s fast-paced world demands online and dynamic algorithms that can adapt to changing conditions while still delivering near-optimal solutions. In contrast to offline algorithms, which have full knowledge of the input in advance, online algorithms receive input sequentially over time. Decisions must be made incrementally, with no or incomplete knowledge of the future.
