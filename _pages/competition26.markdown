@@ -12,14 +12,14 @@ classes: wide
 ## Motivation
 Optimisation is central to real-world logistical challenges such as resource allocation and scheduling. While techniques for static optimization have been studied for several decades, today’s fast-paced world demands online and dynamic algorithms that can adapt to changing conditions while still delivering near-optimal solutions. In contrast to offline algorithms, which have full knowledge of the input in advance, online algorithms receive input sequentially over time. Decisions must be made incrementally, with no or incomplete knowledge of the future.
 
-On-demand ride-hailing and ride-sharing services are a prime example of online, real-time optimization challenges that underly dynamic changes of the environment. Platforms such as Uber and Lyft have developed applications to connect customers with drivers via a mobile application, removing the need for curbside hailing and complementing public transport options to offer customers a comfortable, affordable and convenient means of travel. With the option of ride-sharing, these benefits are retained while also allowing a more sustainable means of transport.
+On-demand ride-hailing and ride-sharing services are a prime example of online, real-time optimization challenges that underlie dynamic changes in the environment. Platforms such as Uber and Lyft have developed applications to connect customers with drivers via a mobile application, removing the need for curbside hailing and complementing public transport options to offer customers a comfortable, affordable, and convenient means of travel. With the option of ride-sharing, these benefits are retained while also allowing a more sustainable means of transport.
 
 Ride-hailing and ride-sharing services employ a fleet of drivers to serve dynamically arising customer requests. These requests are not known in advance by the fleet operator, but users expect quick service. At the same time, businesses must strike a balance between customer satisfaction, minimizing operational costs to maximize profits, and prioritizing sustainability. This problem is NP-hard and inherently very complex, especially in real-world scenarios, where hundreds of requests must be coordinated quickly.
 
-In our challenge, we supply the participants with a 'plug-and-play' setup environment for the ride-hailing and ride-sharing problems. Participants are requested to develop their own optimisation algorithms for solving the challenge. Algorithms can be easily implemented within the setup environment by extending existing interfaces which abstract away from the fine details of the simulation and define core functionalities an algorithm must provide. This allows participants to focus on the optimisation logic without getting bogged down by the details of the simulation itself.
+In our challenge, we supply the participants with a ‘plug-and-play’ setup environment for the ride-hailing and ride-sharing problems. Participants are requested to develop their own optimisation algorithms for solving the challenge. Algorithms can be easily implemented within the setup environment by extending existing interfaces, which abstract away from the fine details of the simulation and define core functionalities an algorithm must provide. This allows participants to focus on the optimisation logic without getting bogged down by the details of the simulation itself.
 
 ## Tracks
-There will be four competition tracks, each corresponding to a specific problem and environment. The ride-hailing problem is a specific case of ride-sharing in which each vehicle in the fleet can pick up at most one customer. In ride-sharing, on the other hand, vehicles may pick up multiple customers at once. In the dynamic environment, changing traffic conditions are simulated, such as traffic jams and spontaneous road closures, which affect driving times during optimisation. In the static environment, distances and times remain the same. Participants are encouraged to choose one or more tracks based on their interests, previous experience and abilities:
+There will be four competition tracks, each corresponding to a specific problem and environment. The ride-hailing problem is a specific case of ride-sharing in which each vehicle in the fleet can pick up at most one customer. In ride-sharing, on the other hand, vehicles may pick up multiple customers at once. In the dynamic environment, changing traffic conditions are simulated, such as traffic jams and spontaneous road closures, which affect driving times during optimisation. In the static environment, distances and times remain the same. Participants are encouraged to choose one or more tracks based on their interests, previous experience, and abilities:
 
 * Track 1: Ride-hailing in a static environment.
 * Track 2: Ride-hailing in a dynamic environment.
@@ -40,7 +40,7 @@ Deadline for submission is June 14th, 2026, 23:59 (AOE). Details on where to upl
 
 ## Evaluation Criteria
 
-We will judge entries on three different criteria:
+We will judge entries on four different criteria:
 
 * Total driving distance of all vehicles in the fleet
 * Total driving time of all vehicles in the fleet
