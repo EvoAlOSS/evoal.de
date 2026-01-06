@@ -7,6 +7,8 @@ main:
     url   : https://gitlab.informatik.uni-bremen.de/evoal/source/evoal-core/-/wikis/home
   - title : "Gitlab"
     url   : https://gitlab.informatik.uni-bremen.de/evoal/source/evoal-core
+  - title	: "GECCO'26 Competition"
+    url	  : /pages/competition26
   - title	: "Publications"
     url	  : /pages/publications
 #  - title	: "Competition'26"
