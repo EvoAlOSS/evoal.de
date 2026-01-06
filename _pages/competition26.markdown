@@ -4,7 +4,9 @@ permalink: /pages/competition26
 date: 2026-01-01T13:00:00+02:00
 author: Bernhard Berger
 author_profile: false
-classes: single
+classes: 
+  - single
+  - wide
 toc: true
 toc_sticky: true
 ---
