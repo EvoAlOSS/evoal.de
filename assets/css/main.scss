@@ -1,3 +1,5 @@
-article.page {
-  width: 100%;
+@media (min-width: 80em) {
+  article.page {
+    width: 100%;
+  }
 }
