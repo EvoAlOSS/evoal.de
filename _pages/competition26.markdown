@@ -6,6 +6,7 @@ author: Bernhard J. Berger
 author_profile: true
 classes: wide
 toc: true
+toc_sticky: true
 ---
 
 [![Publications and Research Topics](/assets/images/banner-competition.jpg){: .full}](/pages/competition26)
