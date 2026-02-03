@@ -14,17 +14,20 @@ toc_sticky: true
 ## Updates
 * **2026-01-06** Put initial competition page online. 
 
+## Important
+We will upload details on the challenge, as well as, example scenarios starting on February, $2^{nd}$. We will add the documentation, Docker containers, and example scenarios to our [GECCO'26 Competition GitLab project](https://gitlab.informatik.uni-bremen.de/evoal/vehicle-routing-problem/gecco26-competition). If you are interested in updates, you can join our Discord Server &mdash; `ugETXPP2`. There, we will post information on updates.
+
 ## Motivation
-Optimisation is central to real-world logistical challenges such as resource allocation and scheduling. While techniques for static optimization have been studied for several decades, today’s fast-paced world demands online and dynamic algorithms that can adapt to changing conditions while still delivering near-optimal solutions. In contrast to offline algorithms, which have full knowledge of the input in advance, online algorithms receive input sequentially over time. Decisions must be made incrementally, with no or incomplete knowledge of the future.
+Optimization is central to real-world logistical challenges such as resource allocation and scheduling. While techniques for static optimization have been studied for several decades, today’s fast-paced world demands online and dynamic algorithms that can adapt to changing conditions while still delivering near-optimal solutions. In contrast to offline algorithms, which have full knowledge of the input in advance, online algorithms receive input sequentially over time. Decisions must be made incrementally, with no or incomplete knowledge of the future.
 
 On-demand ride-hailing and ride-sharing services are a prime example of online, real-time optimization challenges that underlie dynamic changes in the environment. Platforms such as Uber and Lyft have developed applications to connect customers with drivers via a mobile application, removing the need for curbside hailing and complementing public transport options to offer customers a comfortable, affordable, and convenient means of travel. With the option of ride-sharing, these benefits are retained while also allowing a more sustainable means of transport.
 
 Ride-hailing and ride-sharing services employ a fleet of drivers to serve dynamically arising customer requests. These requests are not known in advance by the fleet operator, but users expect quick service. At the same time, businesses must strike a balance between customer satisfaction, minimizing operational costs to maximize profits, and prioritizing sustainability. This problem is NP-hard and inherently very complex, especially in real-world scenarios, where hundreds of requests must be coordinated quickly.
 
-In our challenge, we supply the participants with a ‘plug-and-play’ setup environment for the ride-hailing and ride-sharing problems. Participants are requested to develop their own optimisation algorithms for solving the challenge. Algorithms can be easily implemented within the setup environment by extending existing interfaces, which abstract away from the fine details of the simulation and define core functionalities an algorithm must provide. This allows participants to focus on the optimisation logic without getting bogged down by the details of the simulation itself.
+In our challenge, we supply the participants with a ‘plug-and-play’ setup environment for the ride-hailing and ride-sharing problems. Participants are requested to develop their own optimization algorithms for solving the challenge. Algorithms can be easily implemented within the setup environment by extending existing interfaces, which abstract away from the fine details of the simulation and define core functionalities an algorithm must provide. This allows participants to focus on the optimization logic without getting bogged down by the details of the simulation itself.
 
 ## Tracks
-There will be four competition tracks, each corresponding to a specific problem and environment. The ride-hailing problem is a specific case of ride-sharing in which each vehicle in the fleet can pick up at most one customer. In ride-sharing, on the other hand, vehicles may pick up multiple customers at once. In the dynamic environment, changing traffic conditions are simulated, such as traffic jams and spontaneous road closures, which affect driving times during optimisation. In the static environment, distances and times remain the same. Participants are encouraged to choose one or more tracks based on their interests, previous experience, and abilities:
+There will be four competition tracks, each corresponding to a specific problem and environment. The ride-hailing problem is a specific case of ride-sharing in which each vehicle in the fleet can pick up at most one customer. In ride-sharing, on the other hand, vehicles may pick up multiple customers at once. In the dynamic environment, changing traffic conditions are simulated, such as traffic jams and spontaneous road closures, which affect driving times during optimization. In the static environment, distances and times remain the same. Participants are encouraged to choose one or more tracks based on their interests, previous experience, and abilities:
 
 * Track 1: Ride-hailing in a static environment.
 * Track 2: Ride-hailing in a dynamic environment.
@@ -34,7 +37,7 @@ There will be four competition tracks, each corresponding to a specific problem 
 Participants will have the opportunity to test their algorithms on benchmark request sequences and compare their performance to other submissions. At competition close, submissions will be evaluated on a private set of test instances, and the top submission in each track will be recognized with a cash reward.
 
 ## Evaluation Environment
-We provide participants with a simulation framework that visualises their algorithm's behaviour. Below, you can see a video demonstrating the simulation environment. It additionally allows participants to 'play around' a bit, before testing on the provided benchmark request sequences. 
+We provide participants with a simulation framework that visualizes their algorithm's behaviour. Below, you can see a video demonstrating the simulation environment. It additionally allows participants to 'play around' a bit, before testing on the provided benchmark request sequences. 
 
 <video width="900" height="720" controls>
   <source src="../assets/videos/frontend_demo.mp4" type="video/mp4">
@@ -64,4 +67,5 @@ We will award 500€ of prize money to be divided among the top contestants.
 We will provide text and video tutorials to help participants get started and ease troubleshooting. These will be released on this page pending competition acceptance. Additionally, we'll hold an online Q&A session at the start of the competition. Participants will be able to contact us via mailing list if they encounter any problems.
 
 
-
+## Acknowledgements
+The challenge is supported by the DFG-funded [Research Training Group CAUSE](https://rtg-cause.github.io).
