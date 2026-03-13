@@ -30,4 +30,4 @@ competition:
   - title: GECCO'26 Competition
     children:
       - title: Tutorial
-        url: /doc/competition26/tutorial/
+        url: /docs/competition26/tutorial/
