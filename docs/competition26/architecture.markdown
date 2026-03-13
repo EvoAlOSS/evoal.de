@@ -19,7 +19,7 @@ your optimization idea.
 The following depiction shows the deployment view of the `Simulation
 Framwork`. 
 
-![Architecture Overview](assets/images/deployment.png)
+![Architecture Overview](../../assets/images/deployment.png)
 
 The `Simulation Framework` consists of two Docker containers. The first
 one contains the actual `Simulator`. It reads several configuration files
