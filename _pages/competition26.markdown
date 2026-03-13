@@ -69,15 +69,6 @@ This competition evaluates optimization algorithms for ride-hailing and ride-sha
 
 The simulation considers a fixed operational period of **24 hours**. Any request that is not fully fulfilled by the end of this 24-hour period is automatically considered unsuccessful, modeling the operational constraints of a typical taxi company.
 
-### Key Definitions
-
-To ensure consistent interpretation of the metrics, the following terms are defined as used within this competition:
-
-*   **Requested Pickup Time:** The specific future time desired by the passenger for the pickup to occur. This serves as the reference point for calculating wait times and determining the validity of a request.
-*   **First Pickup Time:** The timestamp at which the vehicle arrives at the pickup location and the passenger(s) board the vehicle. For metric calculation, arrival and boarding are considered simultaneous.
-*   **Final Drop-off Time:** The timestamp at which the vehicle arrives at the destination and the passenger(s) exit the vehicle. For metric calculation, arrival and exiting are considered simultaneous.
-*   **Non-Driving Time:** The cumulative duration a passenger spends waiting at an intermediate location. This specifically refers to situations where a passenger is dropped off at a location that is not their final destination and must wait to be picked up by a subsequent vehicle. It does not include time spent inside a vehicle during detours or stops.
-
 ***
 
 ## How to get started

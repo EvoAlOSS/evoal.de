@@ -6,9 +6,21 @@ author: Bernhard Berger
 author_profile: false
 toc: true
 toc_sticky: true
+sidebar:
+  nav: "competition"
 ---
 
-#### Relative Throughput (used for Evaluation)
+
+### Key Definitions
+
+To ensure consistent interpretation of the metrics, the following terms are defined as used within this competition:
+
+*   **Requested Pickup Time:** The specific future time desired by the passenger for the pickup to occur. This serves as the reference point for calculating wait times and determining the validity of a request.
+*   **First Pickup Time:** The timestamp at which the vehicle arrives at the pickup location and the passenger(s) board the vehicle. For metric calculation, arrival and boarding are considered simultaneous.
+*   **Final Drop-off Time:** The timestamp at which the vehicle arrives at the destination and the passenger(s) exit the vehicle. For metric calculation, arrival and exiting are considered simultaneous.
+*   **Non-Driving Time:** The cumulative duration a passenger spends waiting at an intermediate location. This specifically refers to situations where a passenger is dropped off at a location that is not their final destination and must wait to be picked up by a subsequent vehicle. It does not include time spent inside a vehicle during detours or stops.
+
+### Relative Throughput (used for Evaluation)
 
 **Category:** Success-based
 
@@ -29,7 +41,7 @@ Dimensionless (ratio).
 
 ***
 
-#### (Average) Passenger Pickup Wait Time
+### (Average) Passenger Pickup Wait Time
 
 **Category:** Time-based
 
@@ -50,7 +62,7 @@ Minutes (or seconds, depending on the simulation configuration).
 
 ***
 
-#### (Average) Passenger Journey Time (used for Evaluation)
+### (Average) Passenger Journey Time (used for Evaluation)
 
 **Category:** Time-based
 
@@ -71,7 +83,7 @@ Minutes (or seconds, depending on the simulation configuration).
 
 ***
 
-#### (Average) Passenger Non-Driving Time
+### (Average) Passenger Non-Driving Time
 
 **Category:** Time-based
 
@@ -93,7 +105,7 @@ Minutes (or seconds, depending on the simulation configuration).
 
 ***
 
-#### Driven Distance
+### Driven Distance
 
 **Category:** Cost-based
 
@@ -115,7 +127,7 @@ Kilometers.
 
 ***
 
-#### Used CO2 Emissions
+### Used CO2 Emissions
 
 **Category:** Cost-based
 
@@ -139,7 +151,7 @@ Kilograms (kg) or grams (g).
 
 ***
 
-#### Total Operational Cost (used for Evaluation)
+### Total Operational Cost (used for Evaluation)
 
 **Category:** Cost-based
 

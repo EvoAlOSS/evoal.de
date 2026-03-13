@@ -6,6 +6,8 @@ author: Bernhard Berger
 author_profile: false
 toc: true
 toc_sticky: true
+sidebar:
+  nav: "competition"
 ---
 
 In the following, we will describe how to connect an optimizer to the competition simulator.
