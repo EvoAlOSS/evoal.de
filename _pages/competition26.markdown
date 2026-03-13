@@ -6,6 +6,8 @@ author: Bernhard Berger
 author_profile: false
 toc: true
 toc_sticky: true
+sidebar:
+  nav: "competition"
 ---
 
 [![Publications and Research Topics](/assets/images/banner-competition.jpg){: .full}](/pages/competition26)

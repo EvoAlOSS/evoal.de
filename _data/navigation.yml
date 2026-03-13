@@ -25,3 +25,9 @@ main:
 #    url: /collection-archive/
 #  - title: "External Link"
 #    url: https://google.com
+
+competition:
+  - title: GECCO'26 Competition
+    children:
+      - title: Tutorial
+        url: /doc/competition26/tutorial/
