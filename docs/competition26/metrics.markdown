@@ -11,7 +11,7 @@ sidebar:
 ---
 
 
-### Key Definitions
+## Key Definitions
 
 To ensure consistent interpretation of the metrics, the following terms are defined as used within this competition:
 
@@ -20,6 +20,7 @@ To ensure consistent interpretation of the metrics, the following terms are defi
 *   **Final Drop-off Time:** The timestamp at which the vehicle arrives at the destination and the passenger(s) exit the vehicle. For metric calculation, arrival and exiting are considered simultaneous.
 *   **Non-Driving Time:** The cumulative duration a passenger spends waiting at an intermediate location. This specifically refers to situations where a passenger is dropped off at a location that is not their final destination and must wait to be picked up by a subsequent vehicle. It does not include time spent inside a vehicle during detours or stops.
 
+## Metrics
 ### Relative Throughput (used for Evaluation)
 
 **Category:** Success-based

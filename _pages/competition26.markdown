@@ -65,9 +65,11 @@ We provide participants with a simulation framework that visualizes their algori
 
 ## Evaluation Criteria
 
-This competition evaluates optimization algorithms for ride-hailing and ride-sharing systems. The goal is to fulfill passenger requests efficiently by balancing service quality, time efficiency, and operational costs. The performance of an algorithm is assessed based on a multi-objective problem where one metric from each category—Success-based, Time-based, and Cost-based—is selected for final judgment. The remaining metrics are provided for comprehensive evaluation and to assist contestants in the analysis and modification of their algorithms.
+This competition evaluates optimization algorithms for ride-hailing and ride-sharing systems. The goal is to fulfil passenger requests efficiently by balancing service quality, time efficiency, and operational costs. The performance of an algorithm is assessed based on a multi-objective problem where one metric from each category—Success-based, Time-based, and Cost-based—is selected for final judgment. The remaining metrics are provided for comprehensive evaluation and to assist contestants in the analysis and modification of their algorithms.
 
-The simulation considers a fixed operational period of **24 hours**. Any request that is not fully fulfilled by the end of this 24-hour period is automatically considered unsuccessful, modeling the operational constraints of a typical taxi company.
+The simulation considers a fixed operational period of **24 hours**. Any request that is not fully fulfilled by the end of this 24-hour period is automatically considered unsuccessful, modelling the operational constraints of a typical taxi company.
+
+More details on the metrics used can be found on the [Metrics page](/docs/competition26/metrics). 
 
 ***
 
