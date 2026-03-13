@@ -1,0 +1,55 @@
+---
+title: "Architecture and Event Description"
+permalink: /docs/competition26/architecture
+date: 2026-03-13T13:00:00+02:00
+author: Bernhard Berger
+author_profile: false
+toc: true
+toc_sticky: true
+sidebar:
+  nav: "competition"
+---
+
+# Overview
+This document describes the application architecture of the ride hailing
+simulation, the configuration possibilities, and how you can integrate
+your optimization idea.
+
+## Integration View
+The following depiction shows the deployment view of the `Simulation
+Framwork`. 
+
+![Architecture Overview](assets/images/deployment.png)
+
+The `Simulation Framework` consists of two Docker containers. The first
+one contains the actual `Simulator`. It reads several configuration files
+that describe the actual simulation *plan*. The second container contains
+the `Web Frontend` you can open with your browser. It serves as a graphical
+visualization of the simulation and gives you insights into current
+vehicles in the fleet, travel requests, and metrics. The `Web Frontend`
+uses the [`STOMP Event Bus`](https://stomp.github.io) to exchange
+information with the `Simulator`. This interface is also the connection to
+your `Optimizer`. 
+
+
+## Configuration Files
+The framework uses three input files that steer the actual simulation:
+
+**data/network/*.csv** These files store all information on the road network
+that we operate on. You find detailed descriptions of the file format [here](road-network.md).
+
+**data/scenario/*.json** A series of events stored in a JSON file that describes 
+the scenario to execute. Please click here for a detailed description of the 
+[events](event-documentation.md).
+
+## External Interfaces
+
+**HTTP** You can connect to the simulation framework using a standard web 
+browser. The web browser will show a simulation UI that displays the current
+map, the location of the fleet, existing requests, and additional metrics. 
+
+**STOMP** The STOMP-API allows your `Optimizer` to communicate with the 
+simulation. You are getting updates on changes in the simulation state, new
+requests, or any other stuff you have to know about. The
+[Event Documentation](event-documentation.md) explains the events in greater
+detail.
