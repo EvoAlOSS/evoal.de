@@ -6,6 +6,7 @@ author: Bernhard Berger
 author_profile: false
 toc: true
 toc_sticky: true
+layout: single
 sidebar:
   nav: "competition"
 ---
