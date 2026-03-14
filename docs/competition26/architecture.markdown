@@ -360,3 +360,65 @@ completed its initialization and is ready to participate.
 **Attributes**
 * **category**: Is always set to `"client"`.
 * **name**: Is always set to `"initialized"`.
+
+## Time-related events
+
+### `time:time`
+```json
+{
+  "category": "time",
+  "name": "time",
+  "time": int,
+  "delta": int
+}
+```
+
+**Description**<br/>
+Broadcasts the current simulation time and the elapsed time since the previous update to all
+components.
+
+**Senders**
+* Simulation
+
+**Receivers**
+* Optimizer
+* Simulation
+* Visualization
+
+**Response Events**
+* None
+
+**Attributes**
+* **category**: Is always set to `"time"`.
+* **name**: Is always set to `"time"`.
+* **time**: The current simulation time.
+* **delta**: The time elapsed since the last time update.
+
+
+---
+
+### `time:set-time-scale`
+```json
+{
+  "category": "time",
+  "name": "set-time-scale",
+  "scale": int
+}
+```
+
+**Description**<br/>
+Requests a change of the simulation timescale (allows speeding up the simulation).
+
+**Senders**
+* Visualization
+
+**Receivers**
+* Simulation
+
+**Response Events**
+* None
+
+**Attributes**
+* **category**: Is always set to `"time"`.
+* **name**: Is always set to `"set-time-scale"`.
+* **scale**: The desired timescale to be applied to the simulation. This parameter is not a factor, but tells the simulation the number of seconds that should be simulated in every simulation step (one second).
