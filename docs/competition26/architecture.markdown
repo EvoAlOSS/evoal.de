@@ -361,6 +361,141 @@ completed its initialization and is ready to participate.
 * **category**: Is always set to `"client"`.
 * **name**: Is always set to `"initialized"`.
 
+## Road Network
+
+### `road-network:intersections-added`
+```json
+{
+  "category": "road-network",
+  "name": "intersections-added",
+  "intersections": [ {
+    "id" : long,
+    "longitude": double,
+    "latitude": double
+  } ]
+}
+```
+
+**Description**<br/>
+Notifies all components that new intersections have been added to the road network. This event will
+be sent during initialization in all environments (tracks).
+
+**Senders**
+* Simulation
+
+**Receivers**
+* Optimizer
+* Simulation
+* Visualization
+
+**Response Events**
+* None
+
+**Attributes**
+* **category**: Is always set to `"road-network"`.
+* **name**: Is always set to `"intersections-added"`.
+* **intersections**: List of intersections (JSON representations of the CSV intersection records).
+
+---
+
+### `road-network:roads-added`
+```json
+{
+  "category": "road-network",
+  "name": "roads-added",
+  "roads": [ {
+    "id" : long,
+    "start-node":long,
+    "end-node":long,
+    "length":double,
+    "maximum-speed":int,
+    ...
+  } ]
+}
+```
+
+**Description**<br/>
+Notifies all components that new roads have been added to the road network. This event will
+be sent during initialization in all environments (tracks).
+
+**Senders**
+* Simulation
+
+**Receivers**
+* Optimizer
+* Simulation
+* Visualization
+
+**Response Events**
+* None
+
+**Attributes**
+* **category**: Is always set to `"road-network"`.
+* **name**: Is always set to `"roads-added"`.
+* **roads**: List of roads (JSON representations of the CSV road records).
+
+---
+
+### `road-network:changed-road-property`
+```json
+{
+  "category": "road-network",
+  "name": "changed-road-property",
+  ...
+}
+```
+
+**Description**<br/>
+Indicates that one or more properties of a road in the road network have changed.
+
+**Senders**
+* Simulation
+
+**Receivers**
+* Optimizer
+* Simulation
+* Visualization
+
+**Response Events**
+* None
+
+**Attributes**
+* **category**: Is always set to `"road-network"`.
+* **name**: Is always set to `"changed-road-property"`.
+* **...**: The changed road properties represented as key value pairs.
+
+
+
+---
+
+### `road-network:changed-intersection-property`
+```json
+{
+  "category": "road-network",
+  "name": "changed-intersection-property",
+  "update": { ... }
+}
+```
+
+**Description**<br/>
+Indicates that one or more properties of an intersection in the road network have changed.
+
+**Senders**
+* Simulation
+
+**Receivers**
+* Optimizer
+* Simulation
+* Visualization
+
+**Response Events**
+* None
+
+**Attributes**
+* **category**: Is always set to `"road-network"`.
+* **name**: Is always set to `"changed-intersection-property"`.
+* **...**: The changed intersection properties represented as key value pairs.
+
 ## Time-related events
 
 ### `time:time`
