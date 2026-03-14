@@ -102,7 +102,7 @@ route planning and explanations. Other events will be filtered out by the simula
 
 ##  Simulation Lifecycle Events
 
-### Start the Simulation (`simulation:start`)
+### `simulation:start`
 ```json
 {
   "category": "simulation",
@@ -121,7 +121,7 @@ Informs the Simulation that the simulation should be started.
 * Simulation
 
 **Response Events**
-* `simulation:state`
+* [`simulation:state`](#simulationstate)
 
 **Attributes**
 * **category**: Is always set to `"simulation"`.
@@ -129,7 +129,7 @@ Informs the Simulation that the simulation should be started.
 
 ---
 
-### Pause the Simulation (`simulation:pause`)
+### `simulation:pause`
 ```json
 {
   "category": "simulation",
@@ -149,8 +149,8 @@ Requests the simulation to pause its execution and informs all components about 
 * Visualization
 
 **Response Events**
+* [`simulation:state`](#simulationstate)
 
-* `simulation:state`
 **Attributes**
 * **category**: Is always set to `"simulation"`.
 * **name**: Is always set to `"pause"`.
@@ -158,7 +158,7 @@ Requests the simulation to pause its execution and informs all components about 
 
 ---
 
-### Continue the Simulation (`simulation:continue`)
+### `simulation:continue`
 ```json
 {
   "category": "simulation",
@@ -178,7 +178,7 @@ Requests the simulation to resume execution after being paused.
 * Visualization
 
 **Response Events**
-* `simulation:state`
+* [`simulation:state`](#simulationstate)
 
 **Attributes**
 * **category**: Is always set to `"simulation"`.
@@ -187,7 +187,7 @@ Requests the simulation to resume execution after being paused.
 
 ---
 
-### Stop the Simulation (`simulation:stop`)
+### `simulation:stop`
 ```json
 {
   "category": "simulation",
@@ -208,7 +208,7 @@ Requests the simulation to stop execution and informs all components about the t
 * Visualization
 
 **Response Events**
-* `simulation:state`
+* [`simulation:state`](#simulationstate)
 
 **Attributes**
 * **category**: Is always set to `"simulation"`.
@@ -217,7 +217,7 @@ Requests the simulation to stop execution and informs all components about the t
 
 ---
 
-### Reset the Simulation (`simulation:reset`)
+### `simulation:reset`
 ```json
 {
   "category": "simulation",
@@ -237,7 +237,7 @@ Indicates that the simulation has been reset to its initial state. All component
 * Visualization
 
 **Response Events**
-* `simulation:state`
+* [`simulation:state`](#simulationstate)
 
 **Attributes**
 * **category**: Is always set to `"simulation"`.
@@ -245,7 +245,7 @@ Indicates that the simulation has been reset to its initial state. All component
 
 ---
 
-### Simulation State Update (`simulation:state`)
+### `simulation:state`
 ```json
 {
   "category": "simulation",
@@ -276,7 +276,7 @@ Broadcasts the current state of the simulation (e.g., STOPPED, INITIALIZING, RUN
 
 ---
 
-### Initialize World (`simulation:initialize-world`)
+### `simulation:initialize-world`
 ```json
 {
   "category": "simulation",
@@ -303,7 +303,7 @@ Triggers the internal initialization of the simulation world, such as creating e
 
 ---
 
-### Simulation Initialized (`simulation:initialize`)
+### `simulation:initialize`
 ```json
 {
   "category": "simulation",
@@ -325,7 +325,7 @@ is sent by every client.
 * Visualization
 
 **Response Events**
-* `client:initialized`
+* [`client:initialized`](#clientinitialized)
 
 **Attributes**
 * **category**: Is always set to `"simulation"`.
@@ -334,7 +334,7 @@ is sent by every client.
 
 ---
 
-### Client Initialized (`client:initialized`)
+### `client:initialized`
 ```json
 {
   "category": "client",
