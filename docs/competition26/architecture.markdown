@@ -271,7 +271,7 @@ Broadcasts the current state of the simulation (e.g., STOPPED, INITIALIZING, RUN
 **Attributes**
 * **category**: Is always set to `"simulation"`.
 * **name**: Is always set to `"state"`.
-
+* **state**: Is set to one of the following string values: `STOPPED`, `INITIALIZING`, `RUNNING`, `PAUSED`
 
 
 ---
