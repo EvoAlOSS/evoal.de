@@ -128,7 +128,7 @@ Kilometers.
 
 ***
 
-### Used CO2 Emissions
+### Used CO<sup>2</sup> Emissions
 
 **Category:** Cost-based
 
@@ -136,9 +136,9 @@ Kilometers.
 The total carbon dioxide emissions produced by vehicles to fulfill a specific request.
 
 **Calculation:**
-$$ \text{Used CO2 Emissions} = \sum_{i=1}^{n} \text{CO2 Emissions by Vehicle } i $$
+$$ \text{Used CO_2 Emissions} = \sum_{i=1}^{n} \text{CO_2 Emissions by Vehicle } i $$
 *(Where $n$ is the number of distinct vehicles used for the request)*
-$$ \text{CO2 Emission per distance} = VSP \cdot m \cdot \Delta t \cdot \text{energy-efficiency-factor}$$
+$$ \text{CO_2 Emission per distance} = VSP \cdot m \cdot \Delta t \cdot \text{energy-efficiency-factor}$$
 $$ \text{VSP} = v \cdot(v^{2}\cdot\text{resistance-constant} + \text{fraction-constant})$$
 
 **Adjustment for different settings:**
@@ -160,11 +160,11 @@ Kilograms (kg) or grams (g).
 A composite metric representing the total financial cost associated with fulfilling a specific request, accounting for both fuel consumption and carbon dioxide emissions.
 
 **Calculation:**
-$$ \text{Total Operational Cost} = (\alpha \times \text{Driven Distance}) + (\beta \times \text{Used CO2 Emissions}) $$
-*(Where $\alpha$ represents the cost factor per kilometer and $\beta$ represents the cost factor per unit of CO2)*
+$$ \text{Total Operational Cost} = (\alpha \times \text{Driven Distance}) + (\beta \times \text{Used CO_2 Emissions}) $$
+*(Where $\alpha$ represents the cost factor per kilometer and $\beta$ represents the cost factor per unit of CO<sup>2</sup>)*
 
 **Adjustment for different settings:**
-The weights $\alpha$ and $\beta$ are predefined constants that model current fuel prices and CO2 certificate costs. If passengers are split across multiple vehicles, the driven distance and CO2 emissions are summed for all vehicles involved before applying the weights.
+The weights $\alpha$ and $\beta$ are predefined constants that model current fuel prices and CO<sup>2</sup> certificate costs. If passengers are split across multiple vehicles, the driven distance and CO<sup>2</sup> emissions are summed for all vehicles involved before applying the weights.
 
 **Range:**
 $\geq 0$.
