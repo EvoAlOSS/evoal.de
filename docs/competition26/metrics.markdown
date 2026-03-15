@@ -128,7 +128,7 @@ Kilometers.
 
 ***
 
-### Used CO<sup>2</sup> Emissions
+### Used CO<sub>2</sub> Emissions
 
 **Category:** Cost-based
 
@@ -161,10 +161,10 @@ A composite metric representing the total financial cost associated with fulfill
 
 **Calculation:**
 $$ \text{Total Operational Cost} = (\alpha \times \text{Driven Distance}) + (\beta \times \text{Used CO_2 Emissions}) $$
-*(Where $\alpha$ represents the cost factor per kilometer and $\beta$ represents the cost factor per unit of CO<sup>2</sup>)*
+*(Where $\alpha$ represents the cost factor per kilometer and $\beta$ represents the cost factor per unit of CO<sub>2</sub>)*
 
 **Adjustment for different settings:**
-The weights $\alpha$ and $\beta$ are predefined constants that model current fuel prices and CO<sup>2</sup> certificate costs. If passengers are split across multiple vehicles, the driven distance and CO<sup>2</sup> emissions are summed for all vehicles involved before applying the weights.
+The weights $\alpha$ and $\beta$ are predefined constants that model current fuel prices and CO<sub>2</sub> certificate costs. If passengers are split across multiple vehicles, the driven distance and CO<sub>2</sub> emissions are summed for all vehicles involved before applying the weights.
 
 **Range:**
 $\geq 0$.
