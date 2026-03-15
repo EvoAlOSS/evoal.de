@@ -35,7 +35,7 @@ $$ \text{Relative Throughput} = \frac{\text{Number of Successfully Fulfilled Req
 A request is considered successfully fulfilled if and only if all passengers associated with that specific request have been dropped off at their designated destinations.
 
 **Range:**
-$0.0$ to $1.0$ (or $0\%$ to $100\%$).
+$$$0.0$$ to $$1.0$$ (or $$0\%$$ to $$100\%$$).
 
 **Unit:**
 Dimensionless (ratio).
