@@ -29,7 +29,7 @@ To ensure consistent interpretation of the metrics, the following terms are defi
 The ratio of successfully fulfilled requests to the total number of requests received within the simulation period.
 
 **Calculation:**
-```math \text{Relative Throughput} = \frac{\text{Number of Successfully Fulfilled Requests}}{\text{Total Number of Requests}} ```
+$$ \text{Relative Throughput} = \frac{\text{Number of Successfully Fulfilled Requests}}{\text{Total Number of Requests}} $$
 
 **Adjustment for different settings:**
 A request is considered successfully fulfilled if and only if all passengers associated with that specific request have been dropped off at their designated destinations.
