@@ -401,7 +401,7 @@ Our client informs the simulation of these plans by emitting a `taxi-fleet:plan-
 | `vehicle-id` | `String` | The vehicle to assign the route to |
 | `route` | `List<Step>` | Ordered list of steps the vehicle should execute |
 
-#### Route Structure
+### Route Structure
 
 A route is an ordered sequence of steps. There are three step types:
 
@@ -411,7 +411,7 @@ A route is an ordered sequence of steps. There are three step types:
 | `pick-up-passengers` | `request-id`, `intersection-id`, `count` | Pick up passengers at the start intersection |
 | `drop-off-passengers` | `request-id`, `intersection-id`, `count` | Drop off passengers at the destination |
 
-#### Implementation
+### Implementation
 
 In this tutorial, we only plan routes associated with serving requests and do not implement any repositioning strategy. Route planning is split into two shortest-path queries using JGraphT:
 
@@ -476,7 +476,7 @@ private Optional<Event> assignRequestToVehicle(Vehicle vehicle, RideRequest requ
 }
 ```
 
-#### Example Route
+### Example Route
 
 Below is an example of a `taxi-fleet:plan-route` event payload:
 ```json
