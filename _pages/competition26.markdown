@@ -15,6 +15,7 @@ sidebar:
 
 
 ## Updates
+* **2026-03-15** Added tutorial. 
 * **2026-01-06** Put initial competition page online. 
 * **2026-02-02** First description of metrics online. 
 * **2026-02-26** First description of architecture online.
