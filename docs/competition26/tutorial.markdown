@@ -28,19 +28,25 @@ Our optimizer will maintain an internal representation of the road network and r
 Before implementing a client, we will need to be able to run the simulation (server) and UI (visualisation client). Source code for simulation and UI can be found in the [GECCO26-Competition](https://gitlab.informatik.uni-bremen.de/evoal/vehicle-routing-problem/gecco26-competition#) repository. 
 
 ### Startup
-After downloading the source code, the simulation and the UI can be started via **Docker**. 
+After downloading the source code, the simulation, and the UI can be started via **Docker**. 
 
-The Docker compose (`src/docker/compose`) allows you to start all the containers with the correct settings; however, you must change the location of the data folder to match the relative path to the data folder in the project. For example, to `../../java/simulator/data/:/data`.
+The Docker compose (`src/docker/compose`) allows you to start all the containers with the correct settings; however, you must change the location of the data folder to match the relative path to the data folder in the project. This is done using the `.env` file in the repository that is stored to the `docker-compose.yaml`.
 ```yaml
 services:
   simulator:
-    image: gitlab.informatik.uni-bremen.de:5005/evoal/vehicle-routing-problem/gecco26-competition/simulator:0.9.0
+    image: gitlab.informatik.uni-bremen.de:5005/evoal/vehicle-routing-problem/gecco26-competition/simulator:latest
     ports:
       - 8088:8088
     restart: unless-stopped
     volumes:
       # attach a directory relative to the directory containing this compose file
-      - <Set location to data folder>:/data
+      - ${SCENARIO}:/data
+
+  web-ui:
+    image: gitlab.informatik.uni-bremen.de:5005/evoal/vehicle-routing-problem/gecco26-competition/web-ui:latest
+    ports:
+      - 8080:80
+    restart: unless-stopped
 ```
 Now, you can carry out the following command:
 ```bash
