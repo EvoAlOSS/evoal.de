@@ -28,19 +28,25 @@ Our optimizer will maintain an internal representation of the road network and r
 Before implementing a client, we will need to be able to run the simulation (server) and UI (visualisation client). Source code for simulation and UI can be found in the [GECCO26-Competition](https://gitlab.informatik.uni-bremen.de/evoal/vehicle-routing-problem/gecco26-competition#) repository. 
 
 ### Startup
-After downloading the source code, the simulation and the UI can be started via **Docker**. 
+After downloading the source code, the simulation, and the UI can be started via **Docker**. 
 
-The Docker compose (`src/docker/compose`) allows you to start all the containers with the correct settings; however, you must change the location of the data folder to match the relative path to the data folder in the project. For example, to `../../java/simulator/data/:/data`.
+The Docker compose (`src/docker/compose`) allows you to start all the containers with the correct settings; however, you must change the location of the data folder to match the relative path to the data folder in the project. This is done using the `.env` file in the repository that is stored to the `docker-compose.yaml`.
 ```yaml
 services:
   simulator:
-    image: gitlab.informatik.uni-bremen.de:5005/evoal/vehicle-routing-problem/gecco26-competition/simulator:0.9.0
+    image: gitlab.informatik.uni-bremen.de:5005/evoal/vehicle-routing-problem/gecco26-competition/simulator:latest
     ports:
       - 8088:8088
     restart: unless-stopped
     volumes:
       # attach a directory relative to the directory containing this compose file
-      - <Set location to data folder>:/data
+      - ${SCENARIO}:/data
+
+  web-ui:
+    image: gitlab.informatik.uni-bremen.de:5005/evoal/vehicle-routing-problem/gecco26-competition/web-ui:latest
+    ports:
+      - 8080:80
+    restart: unless-stopped
 ```
 Now, you can carry out the following command:
 ```bash
@@ -50,7 +56,11 @@ You should be able to access the UI at `http://localhost:8080/`.
 ![User Interface](../../assets/images/user_interface.png)
 
 ### Tutorial Code (Greedy Optimizer)
+<<<<<<< HEAD
 For this tutorial, we will implement an optimizer in Java. Source code can be found in the [GECCO26-Competition](https://gitlab.informatik.uni-bremen.de/evoal/vehicle-routing-problem/gecco26-competition#) repository, at `src/java/greedy-optimizer`; please feel encouraged to follow along in a programming language of your choice.
+=======
+For this tutorial, we will implement an optimizer in Java. Source code can be found in the [competition repository](https://gitlab.informatik.uni-bremen.de/evoal/vehicle-routing-problem/gecco26-competition); please feel encouraged to follow along in a programming language of your choice.
+>>>>>>> 9408afc9208fcd21db4cd56852d6fc355c4c0cd4
 
 ##  Connecting to the Simulation
 STOMP (Simple Text Oriented Messaging Protocol) is a lightweight messaging protocol that runs over Websocket. It is how the client and simulator communicate. All Simulation and Optimizer events are exchanged as STOMP messages. 
