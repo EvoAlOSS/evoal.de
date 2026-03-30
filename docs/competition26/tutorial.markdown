@@ -56,11 +56,7 @@ You should be able to access the UI at `http://localhost:8080/`.
 ![User Interface](../../assets/images/user_interface.png)
 
 ### Tutorial Code (Greedy Optimizer)
-<<<<<<< HEAD
-For this tutorial, we will implement an optimizer in Java. Source code can be found in the [GECCO26-Competition](https://gitlab.informatik.uni-bremen.de/evoal/vehicle-routing-problem/gecco26-competition#) repository, at `src/java/greedy-optimizer`; please feel encouraged to follow along in a programming language of your choice.
-=======
-For this tutorial, we will implement an optimizer in Java. Source code can be found in the [competition repository](https://gitlab.informatik.uni-bremen.de/evoal/vehicle-routing-problem/gecco26-competition); please feel encouraged to follow along in a programming language of your choice.
->>>>>>> 9408afc9208fcd21db4cd56852d6fc355c4c0cd4
+For this tutorial, we will implement an optimizer in Java. Source code can be found in the [GECCO26-Competition](https://gitlab.informatik.uni-bremen.de/evoal/vehicle-routing-problem/gecco26-competition) repository, at `src/java/greedy-optimizer`; please feel encouraged to follow along in a programming language of your choice.
 
 ##  Connecting to the Simulation
 STOMP (Simple Text Oriented Messaging Protocol) is a lightweight messaging protocol that runs over Websocket. It is how the client and simulator communicate. All Simulation and Optimizer events are exchanged as STOMP messages. 
