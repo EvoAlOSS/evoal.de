@@ -50,7 +50,7 @@ You should be able to access the UI at `http://localhost:8080/`.
 ![User Interface](../../assets/images/user_interface.png)
 
 ### Tutorial Code (Greedy Optimizer)
-For this tutorial, we will implement an optimizer in Java. Source code can be found at TODO; please feel encouraged to follow along in a programming language of your choice.
+For this tutorial, we will implement an optimizer in Java. Source code can be found in the [GECCO26-Competition](https://gitlab.informatik.uni-bremen.de/evoal/vehicle-routing-problem/gecco26-competition#) repository, at `src/java/greedy-optimizer`; please feel encouraged to follow along in a programming language of your choice.
 
 ##  Connecting to the Simulation
 STOMP (Simple Text Oriented Messaging Protocol) is a lightweight messaging protocol that runs over Websocket. It is how the client and simulator communicate. All Simulation and Optimizer events are exchanged as STOMP messages. 
@@ -197,13 +197,7 @@ The optimizer should handle (at least) two life-cycle events emitted by the serv
 
 **Initialization**
 
-When `simulation:initialize` is received, the client must respond with a `client:initialized` event to signal that it is ready to begin:
-
-```java
-private List<Event> respondWithStartSimulation(final Event event) {  
-    return List.of(new Event("client", "initialized"));  
-}
-```
+When `simulation:initialize` is received, the client enters an *initializing* state. During this time, initialization tasks such as fetching the road network data take place. Ultimately, the client should answer this event with a `client:initialized` event; however, this event should be sent *after* initialization tasks are completed (see [Road Network Initialization](https://evoal.de/docs/competition26/tutorial#initialization) ).
 
 **Reset**
 
@@ -235,20 +229,37 @@ We then add an `Intersection` class:
 
 ### Initialization
 
-During initialization, before the run begins, the server transmits the road network to the client via two events:
+During initialization (after the `simulation:initialize` event but before the run begins), the server signals to the client that the road network is
+ready via a `road-network:map-ready` event. We register a handler method for this event, which will fetch the intersections and roads from separate
+server endpoints:
 
-| Event | Payload |
-|---|---|
-| `road-network:roads-added` | List of roads |
-| `road-network:intersections-added` | List of intersections |
+| URL | Type | Description |
+|---|---|---|
+| `http://localhost:8088/simulation/road-network/intersections` | `ResponseEntity<Map<String, Object>>` | All intersections belonging to road network instance. |
+| `http://localhost:8088/simulation/road-network/roads`  | `ResponseEntity<Map<String, Object>>` | All roads belonging to road network instance. |
 
-These are registered in the `EventDispatcher` as follows:
 ```java
-eventHandlers.put(new EventKey("road-network", "roads-added"), world::onRoadsAdded);  
-eventHandlers.put(new EventKey("road-network", "intersections-added"), world::onIntersectionsAdded);
+public List<Event> fetchRoadNetwork(final Event event) {
+	// Get Intersections and add to internal representation
+	ResponseEntity<Map[]> intersectionsResponse =
+		restTemplate.getForEntity(this.url + "/intersections", Map[].class);
+	Map<String, Object>[] intersectionsArray = intersectionsResponse.getBody();
+	addIntersections(intersectionsArray);
+
+	// Get Roads and add to internal representation
+	ResponseEntity<Map[]> roadsResponse =
+		restTemplate.getForEntity(this.url + "/roads", Map[].class);
+	Map<String, Object>[] roadsArray = roadsResponse.getBody();
+	addRoads(roadsArray);
+
+	return List.of(new Event("client", "initialized"));
+}
 ```
 
-For the purposes of this tutorial, we represent the road network as a `DirectedWeightedPseudograph` using the [JGraphT](https://jgrapht.org/) framework, alongside maps of roads and intersections.
+Note that this handler method **must send a client:initialized event** to signal to the server that the map data has been successfully transmitted and 
+the initialization has completed. 
+
+The `addIntersections` and `addRoads` methods construct an internal representation of the road network in our client. For the purposes of this tutorial, we represent the road network as a `DirectedWeightedPseudograph` using the [JGraphT](https://jgrapht.org/) framework, alongside maps of roads and intersections.
 
 ```java
 @Getter  
@@ -260,9 +271,51 @@ private final Map<Long, Road> roads = new HashMap<>();
 @Getter  
 private final Graph<Intersection, Road> graph =  
         new DirectedWeightedPseudograph<>(Road.class);
+        
+public void addIntersections(final Map<String, Object>[] intersections) {
+	if (intersections == null) return;
+	for(final Map<String, Object> i : intersections) {
+	    Intersection intersection = new Intersection(((Number)i.get(ROAD_NETWORK_ATTRIBUTE_ID)).longValue(), i);
+	    //Add to intersections map
+	    this.intersections.put(intersection.getId(), intersection);
+	    //Add to Directed Weighted Pseudograph
+	    this.graph.addVertex(intersection);
+	}
+}
+
+public void addRoads(final Map<String, Object>[] roads) {
+        if (roads == null) return;
+        for(final Map<String, Object> r : roads) {
+            //parse road data
+            long id = ((Number)r.get(ROAD_NETWORK_ATTRIBUTE_ID)).longValue();
+            double length = (double)r.get(ROAD_NETWORK_ATTRIBUTE_LENGTH);
+            int maxSpeed = (int)r.get(ROAD_NETWORK_ATTRIBUTE_MAX_SPEED);
+
+            final Road road = new Road(id, length, maxSpeed, r);
+
+            long startId = ((Number)r.get(ROAD_NETWORK_ATTRIBUTE_START_NODE)).longValue();
+            long endId = ((Number)r.get(ROAD_NETWORK_ATTRIBUTE_END_NODE)).longValue();
+            
+            //find start and end intersections in intersections map
+            final Intersection start = this.intersections.get(startId);
+            final Intersection end = this.intersections.get(endId);
+
+            //add road to roads map
+            this.roads.put(id, road);
+
+            //Add to Directed Weighted Pseudograph
+            boolean added = this.graph.addEdge(start, end, road);
+            if (!added) {
+                log.warn("Failed to add edge for road {} from {} to {} — duplicate edge?", id, startId, endId);
+                continue;
+            }
+            //Set edge weight to travel time of road
+            this.graph.setEdgeWeight(road, road.duration());
+        }
+}
 ```
 
- JGraphT provides built-in shortest-path algorithms, which we will make use of in a later step.
+ JGraphT provides built-in shortest-path algorithms, which we can make use of in a later step.
 
 ```java
  public Optional<GraphPath<Intersection, Road>> shortestPath(long startId, long endId) {  
