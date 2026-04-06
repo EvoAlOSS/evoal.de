@@ -100,6 +100,9 @@ route planning and explanations. Other events will be filtered out by the simula
 
 *Note:* We will often refer to events by using its short name `category:name`, e.g. `simulation:start`.
 
-* [Simulation Events](https://evoal.de/docs/competition26/events-lifecycle)
+* [Lifecycle Events](https://evoal.de/docs/competition26/events-lifecycle)
 * [Time Events](https://evoal.de/docs/competition26/events-time)
 * [Road Network Events](https://evoal.de/docs/competition26/events-road-network)
+* [Vehicle Events]()
+* [Request Events]()
+* [Person Events]()

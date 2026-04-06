@@ -37,6 +37,10 @@ competition:
         url: /docs/competition26/events-lifecycle
       - title: Time Events
         url: /docs/competition26/events-time
+      - title: Vehicle Events
+        url: /docs/competition26/events-vehicle
+      - title: Error Events
+        url: /docs/competition26/events-error
       - title: Metrics
         url: /docs/competition26/metrics
       - title: Tutorial
