@@ -54,16 +54,6 @@ OPTIMIZER/VISUALIZATION          SIMULATION                   ALL CLIENTS
 ```
 
 
-
-
-
-
-
-
-
-
-
-
 ## Events in Detail
 
 ### `simulation:start`
@@ -108,7 +98,7 @@ Informs all participants about a state change of the simulation. This event is s
 #### Senders
 * `SIMULATION`
 
-**Receivers**
+#### Receivers
 * `OPTIMIZER`,
 * `SIMULATION`,
 * `VISUALIZATION`
@@ -131,7 +121,7 @@ Informs all participants about a state change of the simulation. This event is s
 }
 ```
 
-**Valid State Transitions**
+#### Valid State Transitions
 
 | Previous State | New State      | Triggering Event                  |
 |----------------|----------------|-----------------------------------|
@@ -151,7 +141,7 @@ Resets the simulation to its initial state. This event is sent by the simulation
 #### Senders
 * `SIMULATION`
 
-**Receivers**
+#### Receivers
 * `OPTIMIZER`
 * `SIMULATION`
 * `VISUALIZATION`
@@ -178,7 +168,7 @@ Initializes the simulation world. This is a simulation-internal event and is pro
 #### Senders
 * `SIMULATION`
 
-**Receivers**
+#### Receivers
 * `SIMULATION`
 
 #### Data Fields
@@ -201,7 +191,7 @@ Requests all clients to initialize themselves. This event is sent after the simu
 #### Senders
 * `SIMULATION`
 
-**Receivers**
+#### Receivers
 * `OPTIMIZER`
 * `SIMULATION`
 * `VISUALIZATION`
@@ -219,7 +209,7 @@ Requests all clients to initialize themselves. This event is sent after the simu
 }
 ```
 
-**Expected Receiver Behaviour**
+#### Expected Receiver Behaviour
 
 Each receiver must send a `client:initialized` event to the simulation after successful initialization. The simulation waits for confirmation from **all** clients before transitioning to the `RUNNING` state.
 
@@ -234,7 +224,7 @@ Confirms that a client has completed its initialization. This event is sent in r
 * `SIMULATION`
 * `VISUALIZATION`
 
-**Receivers**
+#### Receivers
 * `SIMULATION`
 
 #### Data Fields
@@ -258,7 +248,7 @@ Pauses the running simulation. The simulation transitions to the `PAUSED` state 
 #### Senders
 * `VISUALIZATION`
 
-**Receivers**
+#### Receivers
 * `OPTIMIZER`
 * `SIMULATION`
 * `VISUALIZATION`
@@ -291,7 +281,7 @@ Resumes a paused simulation. The simulation transitions back to the `RUNNING` st
 #### Senders
 * `VISUALIZATION`
 
-**Receivers**
+#### Receivers
 * `OPTIMIZER`
 * `SIMULATION`
 * `VISUALIZATION`
