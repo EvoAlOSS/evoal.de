@@ -34,7 +34,7 @@ competition:
       - title: Architecture
         url: /docs/competition26/architecture
       - title: Lifecycle Events
-        url: /docs/competition26/lifecycle-events
+        url: /docs/competition26/events-lifecycle
       - title: Metrics
         url: /docs/competition26/metrics
       - title: Tutorial
