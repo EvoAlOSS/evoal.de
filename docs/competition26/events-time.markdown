@@ -1,26 +1,37 @@
-# Time Events
+---
+title: "Time Events"
+permalink: /docs/competition26/events-time
+date: 2026-04-06T11:36:00+02:00
+author: Bernhard Berger
+author_profile: false
+toc: true
+toc_sticky: true
+sidebar:
+  nav: "competition"
+---
+
 The following events handle the time progression of the simulation. They control the internal simulation clock, notify participants about the current simulation time, and allow adjusting the time scale. The simulation distinguishes between internal time ticks and externally communicated time updates. The `time:time` event is sent based on the current time scale, which determines how many internal ticks are simulated within a second before an external time update is broadcast.
 
 ## Sequence Diagram: Time Progression with Scale Change
 
 ```
-VISUALIZATION                    SIMULATION                   ALL CLIENTS
-    |                                |                             |
+VISUALIZATION                    SIMULATION                                  ALL CLIENTS
+    |                                |                                            |
     |                                |-- time:tick (t=1, d=1) --> (internal)
-    |                                |-- time:time (t=1, d=1) --> |
-    |                                |                             |
+    |                                |-- time:time (t=1, d=1) ------------------> |
+    |                                |                                            |
     |                                |-- time:tick (t=2, d=1) --> (internal)
-    |                                |-- time:time (t=2, d=1) --> |
-    |                                |                             |
-    |--- time:set-time-scale(5) --->|                             |
-    |                                |                             |
+    |                                |-- time:time (t=2, d=1) ------------------> |
+    |                                |                                            |
+    |--- time:set-time-scale(5) --->|                                             |
+    |                                |                                            |
     |                                |-- time:tick (t=3, d=1) --> (internal)
     |                                |-- time:tick (t=4, d=1) --> (internal)
     |                                |-- time:tick (t=5, d=1) --> (internal)
     |                                |-- time:tick (t=6, d=1) --> (internal)
     |                                |-- time:tick (t=7, d=1) --> (internal)
-    |                                |-- time:time (t=7, d=5) --> |
-    |                                |                             |
+    |                                |-- time:time (t=7, d=5) ------------------> |
+    |                                |                                            |
 ```
 ---
 

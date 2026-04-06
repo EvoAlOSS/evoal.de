@@ -1,4 +1,14 @@
-# Simulation Lifecycle Events
+---
+title: "Simulation Lifecycle Events"
+permalink: /docs/competition26/events-lifecycle
+date: 2026-04-06T11:36:00+02:00
+author: Bernhard Berger
+author_profile: false
+toc: true
+toc_sticky: true
+sidebar:
+  nav: "competition"
+---
 
 The following events control the lifecycle of the simulation. They govern the starting, initializing, pausing, resuming, and stopping of the simulation as well as the associated state transitions.
 
