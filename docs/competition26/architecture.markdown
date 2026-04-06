@@ -89,7 +89,7 @@ An example road network for the city of Bremen, Germany is provided in `data/net
 The script used to download and save this data can be found at `src/scripts/get_bremen_map_data.py`.
 
 # Events
-In the following, we describe the structure and purpose of all existing events. The events are
+The description of the events is split into several documents, and you find them below. The events are
 serialized in JSON format, allowing you to write clients in any programming language. There are three
 sources for events: the environment, the simulation, and the optimizer. Environmental events stem from
 outside the simulation, such as transportation requests, traffic jams, or road closures. These events
@@ -100,7 +100,12 @@ route planning and explanations. Other events will be filtered out by the simula
 
 *Note:* We will often refer to events by using its short name `category:name`, e.g. `simulation:start`.
 
-##  Simulation Lifecycle Events
+* [Simulation Events](https://evoal.de/docs/competition26/events-lifecycle)
+
+
+
+
+
 
 ### `simulation:start`
 ```json

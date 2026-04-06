@@ -31,8 +31,10 @@ competition:
     children:
       - title: Main
         url: /pages/competition26
-      - title: Architecture and Events
+      - title: Architecture
         url: /docs/competition26/architecture
+      - title: Lifecycle Events
+        url: /docs/competition26/lifecycle-events
       - title: Metrics
         url: /docs/competition26/metrics
       - title: Tutorial
