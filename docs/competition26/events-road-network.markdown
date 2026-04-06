@@ -9,8 +9,6 @@ toc_sticky: true
 sidebar:
   nav: "competition"
 ---
-## Road Network Events
-
 The following events handle the creation and modification of the road network within the simulation. The road network consists of intersections (nodes) and roads (edges) that form the topology on which vehicles travel. These events are emitted during runtime when properties of roads or intersections change.
 
 During initialization, the complete road network can also be downloaded via the simulation's REST endpoint at `/simulation/road-network/intersections` and `/simulation/road-network/roads`. This is particularly useful for the visualization to render the full road network at startup. For details on the structure, refer to the [tutorial on the road network](https://evoal.de/docs/competition26/tutorial#the-road-network).
