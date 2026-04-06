@@ -106,4 +106,5 @@ route planning and explanations. Other events will be filtered out by the simula
 * [Vehicle Events](https://evoal.de/docs/competition26/events-vehicle)
 * [Request Events](https://evoal.de/docs/competition26/events-request)
 * [Person Events](https://evoal.de/docs/competition26/events-person)
+* [Metrics and Explanation Events](https://evoal.de/docs/competition26/events-misc)
 * [Error Events](https://evoal.de/docs/competition26/events-error)

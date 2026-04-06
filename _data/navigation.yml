@@ -43,6 +43,8 @@ competition:
         url: /docs/competition26/events-request
       - title: Person Events
         url: /docs/competition26/events-person
+      - title: Explanations and Metric Events
+        url: /docs/competition26/events-misc
       - title: Error Events
         url: /docs/competition26/events-error
       - title: Metrics
