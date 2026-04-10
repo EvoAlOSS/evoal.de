@@ -11,20 +11,6 @@ main:
     url	  : /pages/competition26
   - title	: "Publications"
     url	  : /pages/publications
-#  - title	: "Competition'26"
-#    url	  : /pages/competition
-#  - title: "Posts"
-#    url: /year-archive/
-#  - title: "Categories"
-#    url: /categories/
-#  - title: "Tags"
-#    url: /tags/
-#  - title: "Pages"
-#    url: /page-archive/
-#  - title: "Collections"
-#    url: /collection-archive/
-#  - title: "External Link"
-#    url: https://google.com
 
 competition:
   - title: GECCO'26 Competition
@@ -33,6 +19,10 @@ competition:
         url: /pages/competition26
       - title: Architecture
         url: /docs/competition26/architecture
+      - title: Metrics
+        url: /docs/competition26/metrics
+      - title: Tutorial
+        url: /docs/competition26/tutorial
       - title: Lifecycle Events
         url: /docs/competition26/events-lifecycle
       - title: Time Events
@@ -47,7 +37,3 @@ competition:
         url: /docs/competition26/events-misc
       - title: Error Events
         url: /docs/competition26/events-error
-      - title: Metrics
-        url: /docs/competition26/metrics
-      - title: Tutorial
-        url: /docs/competition26/tutorial

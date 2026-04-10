@@ -13,13 +13,13 @@ sidebar:
 
 [![Publications and Research Topics](/assets/images/banner-competition.jpg){: .full}](/pages/competition26)
 
-
 ## Updates
+* **2026-04-01** Reworked documentation.
 * **2026-03-15** Added tutorial. 
-* **2026-01-06** Put initial competition page online. 
-* **2026-02-02** First description of metrics online. 
-* **2026-02-26** First description of architecture online.
 * **2026-03-13** Description of events online
+* **2026-02-26** First description of architecture online.
+* **2026-02-02** First description of metrics online. 
+* **2026-01-06** Put initial competition page online. 
 
 ## Important
 We will upload details on the challenge, as well as, example scenarios starting on February, $2^{nd}$. We will add the documentation, Docker containers, and example scenarios to our [GECCO'26 Competition GitLab project](https://gitlab.informatik.uni-bremen.de/evoal/vehicle-routing-problem/gecco26-competition). If you are interested in updates, you can join our Discord Server &mdash; `ugETXPP2`. There, we will post information on updates.
@@ -52,7 +52,7 @@ For submission, please prepare a Docker container that we can build and use to e
 
 
 ## Prizes
-We will award 500€ of prize money to be divided among the top contestants.
+We will award €500 of prize money to be divided among the top contestants.
 
 
 ## Evaluation Environment
@@ -76,8 +76,6 @@ More details on the metrics used can be found on the [Metrics page](/docs/compet
 
 ## How to get started
 We will provide text and video tutorials to help participants get started and ease troubleshooting. These will be released on this page pending competition acceptance. Additionally, we'll hold an online Q&A session at the start of the competition. Participants will be able to contact us via mailing list if they encounter any problems.
-
-
 
 ## Acknowledgements
 The challenge is supported by the DFG-funded [Research Training Group CAUSE](https://rtg-cause.github.io).
