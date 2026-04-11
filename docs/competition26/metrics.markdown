@@ -26,13 +26,13 @@ To ensure consistent interpretation of the metrics, the following terms are defi
 **Category:** Success-based
 
 **Definition:**
-The ratio of successfully fulfilled requests to the total number of requests received within the simulation period.
+The ratio of successfully served customers to the total number of customers within the simulation period.
 
 **Calculation:**
-$$ \text{Relative Throughput} = \frac{\text{Number of Successfully Fulfilled Requests}}{\text{Total Number of Requests}} $$
+$$ \text{Relative Throughput} = \frac{\text{Number of Successfully Served Customers}}{\text{Total Number of Customers}} $$
 
 **Adjustment for different settings:**
-A request is considered successfully fulfilled if and only if all passengers associated with that specific request have been dropped off at their designated destinations.
+A customers is served successfully if the customer was dropped off at the designated destinations.
 
 **Range:**
 $$0.0$$ to $$1.0$$ (or $$0\%$$ to $$100\%$$).
@@ -111,14 +111,14 @@ Minutes (or seconds, depending on the simulation configuration).
 **Category:** Cost-based
 
 **Definition:**
-The total distance traveled by vehicles to fulfill a specific request.
+The total distance traveled by vehicles.
 
 **Calculation:**
 $$ \text{Driven Distance} = \sum_{i=1}^{n} \text{Distance Traveled by Vehicle } i $$
-*(Where $n$ is the number of distinct vehicles used for the request)*
+*(Where $n$ is the number of vehicles)*
 
 **Adjustment for different settings:**
-If all passengers of a request are transported in the same vehicle, the metric corresponds to the total distance traveled by that single vehicle. If passengers are split across multiple vehicles, the distances traveled by each vehicle are summed.
+None
 
 **Range:**
 $\geq 0$.
@@ -133,16 +133,25 @@ Kilometers.
 **Category:** Cost-based
 
 **Definition:**
-The total carbon dioxide emissions produced by vehicles to fulfill a specific request.
+The total carbon dioxide emissions produced by all vehicles.
 
 **Calculation:**
-$$ \text{Used CO_2 Emissions} = \sum_{i=1}^{n} \text{CO_2 Emissions by Vehicle } i $$
-*(Where $n$ is the number of distinct vehicles used for the request)*
-$$ \text{CO_2 Emission per distance} = VSP \cdot m \cdot \Delta t \cdot \text{energy-efficiency-factor}$$
-$$ \text{VSP} = v \cdot(v^{2}\cdot\text{resistance-constant} + \text{fraction-constant})$$
+$$ CO_2\text{ }Emissions = \sum_{v \in vehicles} CO_2\text{ }Emissions(v) $$
+
+$ CO_2\text{ }Emission(v)$ is the sum of the $CO_2\text{ }Emission$ of all roads the vehicle has driven dependent on the speed.
+
+The $ CO_2\text{ }Emissions $ for a distance $length$ travelled in $metres$ at a speed $v$ in $km/h$ are calculated as follows:
+
+$$ \text{VSP} = v \cdot(\text{friction-constant} + \text{resistance-constant} \cdot v^3)$$
+
+$$ energy = VSP \cdot mass \cdot (length / v) / 3600000$$
+
+$$ CO_2\text{ }emissions = (energy / \text{energy-efficiency-factor}) * \cdot \text{CO2-factor}$$
+
+
 
 **Adjustment for different settings:**
-If all passengers of a request are transported in the same vehicle, the metric corresponds to the total emissions produced by that single vehicle. If passengers are split across multiple vehicles, the emissions produced by each vehicle are summed.
+None
 
 **Range:**
 $\geq 0$.
@@ -160,11 +169,11 @@ Kilograms (kg) or grams (g).
 A composite metric representing the total financial cost associated with fulfilling a specific request, accounting for both fuel consumption and carbon dioxide emissions.
 
 **Calculation:**
-$$ \text{Total Operational Cost} = (\alpha \times \text{Driven Distance}) + (\beta \times \text{Used CO_2 Emissions}) $$
-*(Where $\alpha$ represents the cost factor per kilometer and $\beta$ represents the cost factor per unit of CO<sub>2</sub>)*
+$$ \text{Total Operational Cost} = (\alpha \times \text{CO\_2 Emissions}) + (\sum_{v\in vehicles}\alpha_v \times \text{Driven Distance}) +$$
+*(Where $\alpha_v$ represents the cost factor per meter of the vehicle and $\beta$ represents the cost factor per unit of CO<sub>2</sub>)*
 
 **Adjustment for different settings:**
-The weights $\alpha$ and $\beta$ are predefined constants that model current fuel prices and CO<sub>2</sub> certificate costs. If passengers are split across multiple vehicles, the driven distance and CO<sub>2</sub> emissions are summed for all vehicles involved before applying the weights.
+The weight $\beta$ are predefined constant that model current fuel prices and CO<sub>2</sub> certificate costs. 
 
 **Range:**
 $\geq 0$.
