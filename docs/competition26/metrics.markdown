@@ -142,7 +142,7 @@ $ CO_2\text{ }Emission(v)$ is the sum of the $CO_2\text{ }Emission$ of all road
 
 The $ CO_2\text{ }Emissions $ for a distance $length$ travelled in $metres$ at a speed $v$ in $km/h$ are calculated as follows:
 
-$$ \text{VSP} = v \cdot(\text{friction-constant} + \text{resistance-constant} \cdot v^3)$$
+$$ \text{VSP} = v \cdot(\text{friction-constant} + \text{resistance-constant} \cdot v^2)$$
 
 $$ energy = VSP \cdot mass \cdot (length / v) / 3600000$$
 

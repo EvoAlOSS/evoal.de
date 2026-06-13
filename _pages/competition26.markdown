@@ -46,8 +46,9 @@ Participants will have the opportunity to test their algorithms on benchmark req
 
 
 ## Submission Process
-We will publish the final competition resources on March 15th, 2026, 23:59 (AOE), and the submission deadline is June 14th, 2026, 23:59 (AOE). In the meantime, we will polish and document our material and make it available step by step. We will mention updates in the update section. We encourage you to make your competition entry publicly available on [arXiv](https://arxiv.org) and [Zenodo](https://zenodo.org), but you can also submit it in a non-public form.
-
+We will publish the final competition resources on March 15th, 2026, 23:59 (AOE), and the submission deadline is June 14th, 2026, 23:59 (AOE). In the meantime, we will polish and document our material and make it available step by step. We will mention updates in the update section. We encourage you to make your competition entry publicly available on [arXiv](https://arxiv.org) and [Zenodo](https://zenodo.org), but you can also submit it in a non-public form. The submission itself can be done by mail. Please send us a mail containing
+all neccessary links to <tt>xrideopt</tt> at <tt>informatik.uni-bremen.de</tt>.
+  
 For submission, please prepare a Docker container that we can build and use to evaluate your submission. We will post more details on this in the future.
 
 
