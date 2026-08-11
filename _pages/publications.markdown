@@ -13,7 +13,37 @@ from continously adapting and improving EvoAl with regards to usability and
 functionality. Additionally, it has been a key aspect of several publications of the 
 optimisation research done in our groups. You can find a (almost) up-to-date list below. 
 
+
+## 2026
+_Bernhard J. Berger, Christina Plump, and Rolf Drechsler_. **Explainable Ride-Sharing
+Optimisation for Sustainable Traffic Organisation**. GECCO'26 Competition Poster. San José,
+Costa Rica, 2026. [DOI](http://dx.doi.org/10.5281/ZENODO.21539325){: .chip .doi } 
+
+_Lauren Paul, Sebastian Hübner, Christina Plump, Bernhard J. Berger, and Rolf Drechsler_.
+**A Comparison of Repositioning and Scheduling Algorithms for the Ride-Hailing Problem.**
+In KI 2026: Advances in Artificial Intelligence. Springer Nature Switzerland, 2026.
+[DOI](http://dx.doi.org/10.1007/978-3-032-32335-4_24){: .chip .doi }
+
+_Nils Leusmann, Christina Plump, Bernhard J. Berger, and Rolf Drechsler_. **Enhancing
+Surrogate Model Usability for Optimisation Experts through Extended ML Support in EvoAl**.
+In GECCO’26 - The Genetic and Evolutionary Computation Conference Companion, San José,
+Costa Rica, 2026. [DOI](https://doi.org/10.1145/3795101.3814674){: .chip .doi }
+
+_Lauren Paul, Christina Plump, Bernhard J. Berger, and Rolf Drechsler_. **Can Explainability
+Metrics Improve Genetic Programming? Lessons from 2048**. In GECCO’26 - The Genetic and
+Evolutionary Computation Conference Companion, San José, Costa Rica, 2026.
+[DOI](https://doi.org/10.1145/3795101.3814717){: .chip .doi }
+
+_Bernhard J. Berger, Christina Plump, and Rolf Drechsler_. **Ride-Sharing Simulation for
+Optimization**. In GECCO’26 - The Genetic and Evolutionary Computation Conference Companion,
+San José, Costa Rica, 2026. [DOI](https://doi.org/10.1145/3795101.3814733){: .chip .doi }
+
+
 ## 2025
+_Rolf Drechsler, Christina Plump, and Bernhard J. Berger_. **Explanation in Bio-inspired Computing:
+Towards Understanding of AI Systems**. 2025 International Conference on Artificial Intelligence for
+Computing, Astronomy and Renewable Energy (AICARE), Kolkata, India, 2025. [DOI](https://dx.doi.org/10.1109/AICARE66005.2025.11402700){: .chip .doi }
+
 _Bernhard J. Berger and Christina Plump and Rolf Drechsler_. **Why less is sometimes more:
 Using Boolean literals to solve 2048**. In _it - Information Technology_, Walter de Gruyter GmbH,
 ISSN: 2196-7032. February, 2025. [DOI](http://dx.doi.org/10.1515/itit-2024-0072){: .chip .doi}
